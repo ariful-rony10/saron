@@ -125,7 +125,7 @@ body {
 }
 #experience p {
   font-size: 1.5rem;
-  color: #ffffff80;
+  color: rgba(255, 255, 255, 0.502);
 
 }
 .experience-logo-container {
@@ -136,6 +136,13 @@ body {
 }
 .experience-logo-container img {
   margin: 1rem 1.3rem;
+}
+/* Hero  */
+#hero h1 {
+  font-size: 3rem;
+}
+#experience h3 {
+  font-size: 1.9rem;
 }
 /* About */
 #about {
@@ -179,9 +186,11 @@ body {
 
 /* Responsive  */
 @media (max-width: 46.125rem) {
+  /* body */
   body {
     overflow-x: hidden;
   }
+  /* navbar */
   .nav-links {
     position: absolute;
     right: 0;
@@ -202,14 +211,60 @@ body {
   .burger-menu {
     display: block;
   }
-
+/* Expericence */
   .experience-logo-container {
     flex-direction: column;
+  }
+  /* About */
+  .about-container {
+    flex-direction: column;
+    width: 90%;
+  }
+  .about-container img {
+    width: 60%;
+  }
+  .about-container p {
+    font-size: 1rem;
+    width: 100%;
   }
 
 
 
 }
+
+/* MOBILE  */
+@media (max-width: 30rem) {
+
+  /* Hero */
+  #hero h1 {
+    font-size: 1.5rem;
+  }
+
+  /* Expericence */
+  #experience h3 {
+    font-size: 1rem;
+  }
+  .experience-logo-container img{
+    width: 40%;
+  }
+  #experience p {
+    font-size: 1rem;
+  }
+  /* About */
+  .about-container {
+    width: 90%;
+  }
+  .about-container img {
+    width: 60%;
+  }
+  .about-container p {
+    font-size: 0.8rem;
+    width: 80%;
+  }
+}
+
+
+
 .nav-active {
   transform: translateX(0);
 }
