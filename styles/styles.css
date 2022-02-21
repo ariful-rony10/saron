@@ -21,7 +21,7 @@ a {
   text-decoration: none;
 }
 p {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 /* CSS Start */
 
@@ -95,7 +95,7 @@ body {
 }
 #hero h1 {
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 4.5rem;
 }
 .hero-container {
@@ -110,7 +110,6 @@ body {
   color: #00cc52;
 }
 
-
 /* experience */
 #experience {
   margin: 2rem 1rem;
@@ -121,12 +120,11 @@ body {
 }
 #experience h3 {
   font-size: 3rem;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 #experience p {
   font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.502);
-
 }
 .experience-logo-container {
   margin: 0 auto;
@@ -146,7 +144,7 @@ body {
 }
 /* About */
 #about {
-  background: url('../images/ellipse.png');
+  background: url("../images/ellipse.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -154,7 +152,7 @@ body {
   padding: 5rem 2rem;
 }
 .about-container {
-  margin: 0 auto; 
+  margin: 0 auto;
   width: 60%;
   display: flex;
   justify-content: center;
@@ -173,16 +171,117 @@ body {
 }
 
 /* WORK */
+#work {
+  min-height: 100vh;
+  margin: 3rem 1rem;
+  margin: 0 auto;
+}
+.title {
+  font-size: 4rem;
+  color: #00cc52;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+}
+.work-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  object-fit: cover;
+}
+/* .work-container img{
+  object-fit: cover;
+} */
+/* UI/UX */
+#ui-ux {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ui-ux-container {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #00cc52;
+  margin: 2rem 0.2rem;
+}
+.ui-ux-container .ui-ux-img {
+  background-color: #00cc52;
+  padding: 2rem;
+}
+.ui-ux-img img {
+  width: 100%;
+  object-fit: cover;
+}
+.ui-ux-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
 
+.ui-ux-text p {
+  font-size: 1.2rem;
+  padding: 1rem;
+  text-align: justify;
+}
+.ui-ux-text a {
+  color: #00cc52;
+  font-size: 2rem;
+  margin-right: 2rem;
+}
 
-
-
-
-
-
-
-
-
+/* footer */
+footer {
+  margin: 2rem 0rem;
+}
+.footer-container {
+  margin: 0 auto;
+  width: 60%;
+}
+footer h4 {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+.footer-container a {
+  color: #00cc52;
+  font-size: 4rem;
+  transition: all 0.3s ease-out;
+}
+.footer-container a:hover {
+  color: rgba(0, 204, 82, 0.438);
+  transition: all 0.3s ease-in;
+}
+.footer-container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0rem;
+  border-bottom: 2px solid #636364;
+}
+.footer-container ul a {
+  padding: 1rem 2rem;
+  margin-right: 0.5rem;
+  color: #00cc52;
+  font-size: 1rem;
+  transition: all 0.3s ease-out;
+}
+.footer-container ul a:hover {
+  color: rgba(0, 204, 82, 0.438);
+  transition: all 0.3s ease-in;
+}
+.footer-bottom-text {
+  margin: 2rem auto;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 /* Responsive  */
 @media (max-width: 46.125rem) {
@@ -205,13 +304,13 @@ body {
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
   }
-  .nav-links li{
+  .nav-links li {
     opacity: 0;
   }
   .burger-menu {
     display: block;
   }
-/* Expericence */
+  /* Expericence */
   .experience-logo-container {
     flex-direction: column;
   }
@@ -227,14 +326,47 @@ body {
     font-size: 1rem;
     width: 100%;
   }
+  /* Work */
 
+  #work img {
+    width: 90%;
+    /* object-fit: cover; */
+  }
+  /* UI/UX */
+  .ui-ux-container {
+    flex-direction: column;
+  }
+  .ui-ux-img {
+    width: 100%;
+  }
+  .ui-ux-img img {
+    width: 100%;
+    object-fit: cover;
+  }
+  /* footer */
+  .footer-container {
+    width: 90%;
+  }
+  .footer-container a {
+    font-size: 2rem;
+  }
+  .footer-container ul {
+    flex-direction: column;
+  }
+  .footer-container ul li {
+    margin: 1rem 0rem;
+  }
+  .footer-container ul a {
+    font-size: 1rem;
+  }
 
-
+  .footer-bottom-text {
+    width: 100%;
+  }
 }
 
 /* MOBILE  */
 @media (max-width: 30rem) {
-
   /* Hero */
   #hero h1 {
     font-size: 1.5rem;
@@ -244,7 +376,7 @@ body {
   #experience h3 {
     font-size: 1rem;
   }
-  .experience-logo-container img{
+  .experience-logo-container img {
     width: 40%;
   }
   #experience p {
@@ -259,22 +391,31 @@ body {
   }
   .about-container p {
     font-size: 0.8rem;
-    width: 80%;
+    width: 100%;
+  }
+
+  /* footer */
+  .footer-container a {
+    font-size: 1.5rem;
+  }
+  .footer-container h4 {
+    font-size: 0.9rem;
+  }
+  .footer-bottom-text {
+    font-size: 0.9rem;
   }
 }
-
-
 
 .nav-active {
   transform: translateX(0);
 }
 /* Burger Menu */
 @keyframes navLinkFade {
-  from{
+  from {
     opacity: 0;
     transform: translateX(50px);
   }
-  to{
+  to {
     opacity: 1;
     transform: translateX(0px);
   }
